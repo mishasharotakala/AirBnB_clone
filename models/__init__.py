@@ -1,8 +1,7 @@
-from . import base_model
-from . import user
-from .engine.file_storage import FileStorage
+#!/usr/bin/python3
+"""__init__ magic method for models directory"""
+from models.engine.file_storage import FileStorage
 
-all = [base_model.BaseModel, user.User]
 
 storage = FileStorage()
 storage.reload()
